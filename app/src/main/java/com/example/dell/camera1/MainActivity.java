@@ -19,8 +19,9 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements SurfaceHolder.Callback, Camera.PreviewCallback {
     private SurfaceView surfaceView;//预览摄像头
     private SurfaceHolder surfaceHolder;
-    private Button button;//拍照按钮
+    private Button button,tiaozhuan;//拍照按钮
     private Camera camera;//摄像头
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,8 +31,9 @@ public class MainActivity extends AppCompatActivity implements SurfaceHolder.Cal
         initListener();
     }
     private void initView() {
-        surfaceView = (SurfaceView) findViewById(R.id.main_surface_view);
+        surfaceView = (SurfaceView)findViewById(R.id.main_surface_view);
         button = (Button) findViewById(R.id.main_button);
+        tiaozhuan=findViewById(R.id.tiaozhuan);
     }
 
     private void initData() {

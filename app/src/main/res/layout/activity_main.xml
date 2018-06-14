@@ -15,14 +15,25 @@
         android:id="@+id/main_surface_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
+<LinearLayout
+    android:layout_gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
     <Button
+        android:layout_weight="1"
+        android:text="跳转"
+        android:id="@+id/tiaozhuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_weight="1"
         android:textAllCaps="false"
         android:id="@+id/main_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_margin="10dp"
+
         android:text="@string/take_picture" />
+</LinearLayout>
     </FrameLayout>
 </LinearLayout>
